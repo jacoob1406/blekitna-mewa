@@ -11,8 +11,7 @@ $(document).ready(function() {
     event.preventDefault();
 
     $('html, body').animate({
-      scrollTop: $($.attr(this, 'href')).offset().top + 60
-    }, 500);
+      scrollTop: $($.attr(this, 'href')).offset().top}, 500);
   });
 
   $('#menu').click(function () {
@@ -27,6 +26,6 @@ $('#ulnav').click(function () {
 
   $('#click_apartments').click(function() {
     console.log('hello');
-    $('#listr').css({'left': 0})
+    $('#listr').css({'left': '2.5%'})
   });
 });
