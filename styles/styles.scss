@@ -77,6 +77,17 @@ h2 {
     }
 }
 
+@media screen and (max-width: 990px){
+  .loader {
+    .loader-circle {
+      background-size: 100px;
+      width: 200px;
+      height: 200px;
+      margin-right: 50px;
+    }
+  }
+}
+
 nav {
   width: 100vw;
   position: fixed;

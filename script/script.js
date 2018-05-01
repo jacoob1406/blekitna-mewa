@@ -1,7 +1,7 @@
-$(window).on('load', function () { // makes sure the whole site is loaded
-    $('.loader-circle').fadeOut(); // will first fade out the loading animation
-    $('.loader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
-    $('body').delay(350).css({'overflow': 'visible'});
+$(window).on('load', function (){
+    $('.loader-circle').fadeOut();
+    $('.loader').delay(350).fadeOut('slow');
+    $('body').delay(350).css({'overflow': 'visible' });
 });
 
 
