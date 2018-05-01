@@ -26,6 +26,9 @@ $('#ulnav').click(function () {
 
   $('#click_apartments').click(function() {
     console.log('hello');
-    $('#listr').css({'left': '2.5%'})
+    //$('#listr').css({'left': '2.5%'});
+    $('#listr').toggleClass('toggle_left');
+    $('#close_plans').toggleClass('none');
+    $('#open_plans').toggleClass('none');
   });
 });

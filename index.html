@@ -21,7 +21,7 @@
   </div>
   <nav>
     <div class="toggle">
-      <span id="menuicon"><i class="fa fa-bars menu" id="menu" aria-hidden="true"></i></span>
+      <span id="menuicon"><i class="fa fa-bars menu" id="menu"></i></span>
     </div>
     <ul id="ulnav" class="active" >
       <li><a href="#location">LOKALIZACJA</a></li>
@@ -57,7 +57,7 @@
     </div>
   </div>
   <div class="visualisations-container" id="offer">
-    <div class="apartments" id="click_apartments"><i class="fas fa-arrow-circle-down fa-2x "></i>
+    <div class="apartments" id="click_apartments"><i id="open_plans" class="fas fa-arrow-circle-down fa-2x "></i><i id="close_plans" class="fas fa-times-circle fa-2x none"></i>
       <p> Plany mieszkań</p>
     </div>
     <div class="apartments-list left_zero" id="listr">
@@ -165,8 +165,8 @@
     <div class="closing-container__subcontainer">
       <img src="./assets/images/seagull_white.png" alt="" class="closing-container__subcontainer__image">
       <hgroup>
-        <h2 class="closing-container__subcontainer__heading">664 119 687</h2>
-        <h2 class="closing-container__subcontainer__heading">mail@mail.mail</h1>
+        <h2 class="closing-container__subcontainer__heading"><a class="closing-container__subcontainer__link closing-container__subcontainer__link--tel" href="tel:664 119 687">664 119 687</a></h2>
+        <h2 class="closing-container__subcontainer__heading"><a class="closing-container__subcontainer__link closing-container__subcontainer__link--a" href="mailto:mail@mail.mail">mail@mail.pl</a></h1>
         <h2 class="closing-container__subcontainer__heading">Błękitna Mewa</h1>
         <h2 class="closing-container__subcontainer__heading closing-container__subcontainer__heading--last">NIP: 323283728</h2>
       </hgroup>
