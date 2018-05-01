@@ -4,9 +4,18 @@ $(document).ready(function() {
     event.preventDefault();
 
     $('html, body').animate({
-      scrollTop: $($.attr(this, 'href')).offset().top - 40
+      scrollTop: $($.attr(this, 'href')).offset().top + 60
     }, 500);
   });
+
+  $('#menu').click(function () {
+    console.log('hello');
+    $('#ulnav').toggleClass('active');
+});
+
+$('#ulnav').click(function () {
+    $(this).toggleClass('active');
+});
 
 
   $('#click_apartments').click(function() {

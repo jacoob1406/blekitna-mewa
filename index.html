@@ -10,7 +10,6 @@
   <link href="https://fonts.googleapis.com/css?family=Lato:300" rel="stylesheet">
   <link href="styles/normalize.css" rel="stylesheet" type="text/css" />
   <link href="styles/styles.min.css" rel="stylesheet" type="text/css" />
-  <script src="script/script.js" type="text/javascript" async></script>
   <title>Błękitna Mewa</title>
 </head>
 
@@ -21,8 +20,11 @@
     </div>
   </div>
   <nav>
-    <ul id="ulnav">
-      <li><a href="#about">LOKALIZACJA</a></li>
+    <div class="toggle">
+      <span id="menuicon"><i class="fa fa-bars menu" id="menu" aria-hidden="true"></i></span>
+    </div>
+    <ul id="ulnav" class="active" >
+      <li><a href="#location">LOKALIZACJA</a></li>
       <li><a href="#memories">OFERTA</a></li>
       <li><a href="#together">KONTAKT</a></li>
       <li><a href="#about">TABELA APARTAMENTÓW</a></li>
@@ -33,13 +35,13 @@
     <div class="introduction-container__subcontainer">
       <img src="./assets/images/seagull_white.png" alt="" class="introduction-container__subcontainer__image">
       <hgroup>
-        <h2 class="introduction-container__subcontainer__subheading introduction-container__subcontainer__subheading--spacing" >BŁĘKITNA</h2>
+        <h2 class="introduction-container__subcontainer__subheading introduction-container__subcontainer__subheading--spacing">BŁĘKITNA</h2>
         <h1 class="introduction-container__subcontainer__heading">MEWA</h1>
         <h2 class="introduction-container__subcontainer__subheading introduction-container__subcontainer__subheading--last">APARTAMENTY</h2>
       </hgroup>
     </div>
   </div>
-  <div class="location-container">
+  <div class="location-container" id="location">
     <div class="location-container__subcontainer">
       <img class="location-container__subcontainer__image" src="./assets/images/seagull_white.png" alt="">
       <hgroup>
@@ -50,11 +52,14 @@
         <h1 class="location-container__subcontainer__heading">3,5km</h1>
         <h3 class="location-container__subcontainer__subheading">plaża Mechelinki</h3>
       </hgroup>
-    <iframe class="location-container__subcontainer__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6923.995910360301!2d18.49653086019486!3d54.610924417897635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46fda725d7d7e00f%3A0xa628daa9af7b0410!2sDworek+Mechelinki!5e0!3m2!1spl!2spl!4v1525175079895" frameborder="0" allowfullscreen></iframe>
+      <iframe class="location-container__subcontainer__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6923.995910360301!2d18.49653086019486!3d54.610924417897635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46fda725d7d7e00f%3A0xa628daa9af7b0410!2sDworek+Mechelinki!5e0!3m2!1spl!2spl!4v1525175079895"
+        frameborder="0" allowfullscreen></iframe>
     </div>
   </div>
   <div class="visualisations-container">
-    <div class="apartments" id="click_apartments"><i class="fas fa-bars fa-2x "></i> <p> Plany mieszkań</p></div>
+    <div class="apartments" id="click_apartments"><i class="fas fa-bars fa-2x "></i>
+      <p> Plany mieszkań</p>
+    </div>
     <div class="apartments-list left_zero" id="listr">
       <div class="apartments-list__column">
         <ul>
